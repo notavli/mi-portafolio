@@ -6,7 +6,13 @@ import { TecnoComponent } from './component/tecno/tecno.component';
 import { ExpereciaComponent } from './component/experecia/experecia.component';
 import { ContactoComponent } from './component/contacto/contacto.component';
 export const routes: Routes = [
-    {
+    
+        {
+        path: '',
+        redirectTo: 'hero',
+        pathMatch: 'full'
+    },
+     {
          path: 'hero', component: HeroComponent
     },
     {
